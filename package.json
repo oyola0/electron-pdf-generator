@@ -1,0 +1,44 @@
+{
+  "name": "merce",
+  "version": "1.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron --inspect=5858 .",
+    "build": "rm -rf ./bin && electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/joseoyola/merce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/joseoyola/merce#readme",
+  "devDependencies": {
+    "electron": "7.1.5",
+    "electron-builder": "^21.2.0"
+  },
+  "dependencies": {
+    "@tarekraafat/autocomplete.js": "7.2.0",
+    "html2canvas": "1.0.0-rc.5",
+    "jspdf": "^1.5.3"
+  },
+  "build": {
+    "appId": "example-app-id",
+    "productName": "consentimiento",
+    "directories": {
+      "app": ".",
+      "output": "./bin"
+    },
+    "win": {
+      "icon": "./src/assets/icon.png",
+      "target": "portable"
+    },
+    "linux": {
+      "icon": "./src/assets/icon.png",
+      "target": "zip"
+    }
+  }
+}

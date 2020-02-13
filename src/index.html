@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ELECTRON CONSENT</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" type="text/css" href="../node_modules/@tarekraafat/autocomplete.js/dist/css/autoComplete.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <script src="../node_modules/@tarekraafat/autocomplete.js/dist/js/autoComplete.js"></script>
+  <script type="module" src="./js/index.js"></script>
+</head>
+
+<body>
+  <section class="page1">
+    <h1 class="center">DECLARACIÓN DE CONFORMIDAD</h1>
+    <h6 class="center">(REAL DECRETO XXXX/XXXX SOBRE PRODUCTOS SANITARIOS. ANEXO VIII. PRODUCTOS A MEDIDA)</h6>
+    <div class="flex">
+      <div class="padd2">        
+        <div class="flex2">
+          <h2 class="nowrap">Declaración de conformidad Nª: <span class="conformidad">0000000</span></h2>
+          <h2 class="pl2">Nº de licencia: 000001</h2>
+        </div>
+        <div class="flex2">
+          <h2 class="mt0">Razón social: XXXXX XXXX</h2>
+          <h2 class="mt0 pl2">Colegiado nº: XXXXXXX</h2>
+        </div>
+        <h2 class="mt0 mb2">Técnico responsable: XXXXX XXXXXXXX</h2>
+
+        <div class="box">
+          <p>
+            <strong>DECLARA: </strong>que el producto sanitario individializado descrito a continuación, cumple los
+            requisitos esenciales establecido en el Anexo I del Real Decreto XXXX/XXXX que le son de aplicación, por lo
+            que
+            queda garantizada la ausencia de compromiso para la salud y la seguridad de la persona indicada a
+            continuación,
+            para la cual se ha fabricado a su medida, según la prescripción del profesional que se indica también a
+            continuación, siempre y cuando el producto se utilice conforme a su finalidad prevista y siguiendo las
+            intrucciones de uso, así como ofrece las prestaciones asignadas.
+          </p>
+          <p>
+            <strong>SE COMPROMETE: </strong> a mantener a dsposición de las autoridades competentes la
+            documentación relativa al diseño y la fabricación del producto a medida, durante cinco años.
+          </p>
+        </div>
+
+        <div class="flex">
+          <div>
+            <h2 class="reset">DATOS DEL PRESCRIPTOR</h2>
+            <textarea class="auto" id="prescriptor" name="prescriptor"></textarea>
+          </div>
+          <div>
+            <h2 class="reset text-long">DATOS DEL PACIENTE/USUARIO</h2>
+            <textarea class="auto" id="paciente" name="paciente"></textarea>
+          </div>
+        </div>
+
+        <h2 class="center mt2">DATOS DEL PRODUCTO Y DESCRIPCIÓN</h2>
+
+        <div class="flex">
+          <label><input type="checkbox" id="example-id-1"> Example 1</label>
+          <label><input type="checkbox" id="example-id-2"> Example 2</label>
+        </div>
+        <div class="flex mb1">
+          <label><input type="checkbox" id="example-id-3"> Example 3</label>
+          <label><input type="checkbox" id="example-id-4"> Example 4</label>
+        </div>
+        <div class="flex">
+          <label><input type="checkbox" id="example-id-5"> Example 5</label>
+          <label><input type="checkbox" id="example-id-6"> Example 6</label>
+        </div>
+        <div class="flex">
+          <label><input type="checkbox" id="example-id-7"> Example 7</label>
+          <label><input type="checkbox" id="example-id-8"> Example 8</label>
+        </div>
+      </div>
+
+      <div class="padd2 rel">
+        <h2 class="center mb1">MATERIALES</h2>
+
+        <table>
+          <tr>
+            <th>DESCRIPCIÓN</th>
+            <th>DISTRIBUIDOR</th>
+            <th>MARCA</th>
+            <th>Nº DE LOTE</th>
+          </tr>
+          <tr>
+            <td><input class="auto" id="descripcion1" name="descripcion"></td>
+            <td><input class="auto" id="distribuidor1" name="distribuidor"></td>
+            <td><input class="auto" id="marca1" name="marca"></td>
+            <td><input class="auto" id="lote1" name="lote"></td>
+          </tr>
+          <tr>
+            <td><input class="auto" id="descripcion2" name="descripcion"></td>
+            <td><input class="auto" id="distribuidor2" name="distribuidor"></td>
+            <td><input class="auto" id="marca2" name="marca"></td>
+            <td><input class="auto" id="lote2" name="lote"></td>
+          </tr>
+          <tr>
+            <td><input class="auto" id="descripcion3" name="descripcion"></td>
+            <td><input class="auto" id="distribuidor3" name="distribuidor"></td>
+            <td><input class="auto" id="marca3" name="marca"></td>
+            <td><input class="auto" id="lote3" name="lote"></td>
+          </tr>
+        </table>
+
+        <h2 class="center mt3">FINALIDAD</h2>
+
+        <div class="flex mb1">
+          <label><input type="checkbox" id="compen"> Compensación</label>
+          <label class="pl2"><input type="checkbox" id="sustit"> Sustitución</label>
+        </div>
+        <div class="flex">
+          <label><input type="checkbox" id="correc"> Corrección</label>
+        </div>
+        <div class="flex bottom">
+          <h2 class="pl2">FIRMA</h2>
+          <div class="flex">
+            <h2>FECHA</h2>
+            <input id="date" type="date">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page2 padd2">
+    <h2 class="center">TARJETA DE IDENTIFICACIÓN</h2>
+    <h6 class="center">(Según R.D. XXXX/XXXXX sobre productos)</h6>
+
+    <table class="table2">
+      <tr>
+        <th>Contenido</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>
+          Identificación del "producto a medida"
+          <input class="auto" id="identificacion" name="identificacion">
+        </td>
+        <td>
+          Fecha de fabricación
+          <strong id="fab-date"></strong>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Nombre del fabricante
+          <strong>XXXX XXXXXX</strong>
+        </td>
+        <td>
+          Nº de licencia
+          <strong>XXXXXX</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Domicilio del fabricante
+          <strong>ADDRESS XXXXX</strong>
+        </td>
+        <td>
+          Técnico responsable nº
+          <strong>XXXXX</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Nombre del prescriptor
+          <strong id="prescriptor-text"></strong>
+        </td>
+        <td>
+          Nombre del paciente
+          <strong id="paciente-text"></strong>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Nº de declaración de conformidad
+          <strong class="conformidad"></strong>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+
+    <h2 class="under center mt3">INSTRUCCIONES DE USO</h2>
+
+    <div class="box">
+      <p class="center">
+        ÉSTE PRODUCTO HA SIDO FABRICADO BAJO UNAS CONDICIONES 
+        DETERMINADAS. CUALQUIER MODIFICACIÓN DE LAS MISMAS PODRÍA VARIAR SUS PRESTACIONES Y/O
+        EFICACIA. EN TAL CASO, DEBERÁ CONSULTAR CON EL PROFESIONAL COMPETENTE.
+        CUALQUIER MANIPULACIÓN POR PERSONAS AJENAS AL FABRICANTE, PUEDE VARIAR
+        SUS CARACTERÍSTICAS POR LO QUE PODRÍA INVALIDAR LA DECLARACIÓN DE CONFORMIDAD CORRESPONDIENTE.
+      </p>
+    </div>
+  </section>
+
+  <div class="save" title="guardar">
+    <img src="./assets/save.png"/>
+  </div>
+
+  <div id="loader-container" class="none">
+    <div class="loader">Loading...</div>
+  </div>
+</body>
+
+</html>

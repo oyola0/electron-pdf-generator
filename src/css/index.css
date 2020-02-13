@@ -1,0 +1,347 @@
+* { 
+    box-sizing: border-box;
+}
+
+body, html {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   background-color: #CCC;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 1rem 0;
+}
+
+h6 {
+    margin: 0 0 1rem;
+}
+
+table {
+    width: 100%;    
+}
+
+section {    
+    vertical-align: top;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    vertical-align: top;
+    position: relative;
+}
+
+td {
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 2rem;
+}
+
+table tr:nth-child(2) td {
+    border-top: 1px solid #000;
+}
+
+table tr td:last-child {
+    border-right: 1px solid #000;
+}
+
+td strong{
+    padding-top: 0.3rem;
+    display: block;
+    width: 100%;
+}
+
+textarea, input {
+    border: 1px solid #CCC;
+}
+
+textarea {
+    width: 90%;
+    height: 2.3rem;
+    resize: none;    
+}
+
+input:not([type="checkbox"]) {
+    display: block;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.table2 td {
+    width: 50%;
+}
+
+.reset {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.text-long {
+    width: 105%;
+}
+
+.under {
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+
+.flex, .flex2 {
+    display: flex;
+}
+
+.flex>* {
+    width: 50%;
+}
+
+.flex2>* {
+    width: 60%;
+}
+
+.flex2>*:last-child {
+    width: 40%;
+}
+
+.pl1 {
+    padding-left: 1rem;
+}
+
+.pl2 {
+    padding-left: 2rem;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mt3 {
+    margin-top: 3rem;    
+}
+
+.mt2 {
+    margin-top: 2rem;    
+}
+
+.mb1 {
+    margin-bottom: 1rem;
+}
+
+.mb2 {
+    margin-bottom: 2rem;
+}
+
+.padd2 {
+    padding: 0 1rem;
+}
+
+.box {
+    border: 1px solid #000;
+    padding: 0 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.box p {
+    margin: 0.5rem 0;
+}
+
+.bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.rel {
+    position: relative;
+}
+
+.page1, .page2 {
+    background: #FFF;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.page1 {
+    height: 190mm;
+    width: 277mm;
+}
+
+.page2 {
+    width: 190mm;
+    height: 277mm;
+}
+
+#autoComplete_list {
+    max-width: 100%;
+    position: absolute;
+    left: initial;
+    right: initial;
+}
+
+.autoComplete_result {
+    margin: 0;
+}
+
+.autoComplete_highlighted {
+    color: black;
+}
+
+.autoComplete_result:hover, .autoComplete_result:focus, .autoComplete_selected {
+    background-color: rgba(255, 248, 248, 0.9);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.autoComplete_result:last-child {
+    border-radius: 0;
+}
+
+.save {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;    
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.save:hover {
+    opacity: 1;
+}
+
+.save img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.textarea-print {
+    padding-top: 0.3rem;
+    display: block;
+    width: 100%;
+    height: 2.3rem;
+}
+
+.input-print {
+    display: block;
+    width: 100%;
+}
+
+.page2 .input-print {
+    padding-top: 0.3rem;
+    font-weight: bold;
+}
+
+#loader-container {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.none {
+    display: none !important;
+}
+
+.loader {
+    color: #FFF;
+    font-size: 90px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 72px auto;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  }
+  @-webkit-keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @-webkit-keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
