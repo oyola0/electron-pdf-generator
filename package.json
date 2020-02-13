@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/joseoyola/merce.git"
+    "url": "https://github.com/Oyola1987/electron-pdf-generator"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/joseoyola/merce#readme",
+  "homepage": "https://github.com/Oyola1987/electron-pdf-generator",
   "devDependencies": {
     "electron": "7.1.5",
     "electron-builder": "^21.2.0"
